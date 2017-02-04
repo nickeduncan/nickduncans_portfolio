@@ -5,7 +5,7 @@
 }
 
 html {
-	display: block;
+	display: flex;
 }
 
 body {
@@ -19,12 +19,10 @@ body {
 /** NAVBAR **/
 
 
-.navbar {
-	position: relative;
-	min-height: 50px;
+header {
 	font-size: 0.9em;
 	background-color: rgba(248, 216, 156, 0.3);
-	border-bottom: 1px solid;
+	display: flex;
 }
 
 ul.menu {
@@ -51,8 +49,10 @@ a.logo img {
 
 div.main {
 	width: 100%;
-	background: no-repeat url('../img/florida.png');
+	background: no-repeat center center url('../img/florida.png');
 	background-size: cover;
+	height: 35.1em
+
 }
 
 .main h1 {
@@ -75,7 +75,14 @@ div.main {
 
 .footer {
 	/*width:100%*/
+	padding: 1em;
 }
+
+.footer p {
+	margin-top: 0px;
+margin-bottom: 0px;
+}
+
 
 /**********bootstrap*********/
 /*
