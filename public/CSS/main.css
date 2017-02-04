@@ -32,26 +32,30 @@ ul.menu {
 }
 
 button {
-	border: 1px solid;
-	height: 3em;
-	width: 3em;
-	margin: 0.9em 3.2em;
-	float: right;
-	border-radius: 5px;
+    border: 1px solid;
+    height: 3em;
+    width: 3em;
+    border-radius: 5px;
+    margin: 1.1em;
+    float: right;
+    margin-left: 15em;
 }
 
 a.logo img {
 	margin: 0.2em 0.5em;
+	height: 5em;
+	width: 5em;
 }
 
+/* ------ */
 /** MAIN **/
-/**********/
+/* ------ */
 
 div.main {
 	width: 100%;
 	background: no-repeat center center url('../img/florida.png');
 	background-size: cover;
-	height: 35.1em
+	height: 33.6em
 
 }
 
