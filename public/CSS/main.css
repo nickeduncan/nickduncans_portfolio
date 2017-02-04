@@ -1,97 +1,166 @@
-html, body {
-		margin: 0;
-		padding: 0;
-	}
-
-	body {
-		background-color: : rgba(248, 216, 156, 0.3);
-	}
-
-	.navbar-default {
-		background-color: rgba(248, 216, 156, 0.3);
-		border: 0;
-		color: #fff7e6;
-	}
-
-	.navbar-default .navbar-nav li a {
-		color: #fff7e6;
-	}
-
-	li:hover {
-		background: #fff7e6;
-	}
-
-	.navbar-brand {
-		opacity: 1;
-	}
-
-	.navbar-brand img {
-		opacity: 1;
-		filter: invert(100%);
-		margin-top: -10px;
-	}
-
-	.navbar-brand img:hover {
-		filter: invert(0%);
-	}
-
-.navbar-brand:hover {
-		background: #fff7e6;
-	}
-
-	.navbar-header .navbar-toggle {
-		border: 0;
-	}
-
-.navbar-toggle:hover {
-		background: #fff7e6;
-	}
-
-	.navbar-header .icon-bar {
-		border: 1px solid #fff7e6;
-	}
-
-	.navbar-header .icon-bar:hover {
-		border: 1px solid #;
-	}
-
-	.jumbotron {
-		background: url("http://eoimages.gsfc.nasa.gov/images/imagerecords/84000/84737/iss041e074232_lrg.jpg") center center no-repeat;
-
-		background-size: cover;
-		height: 670px;
-		margin-top: -70px;
-	}
-
-		.jumbotron .row {
-			text-align: center;
-			padding: 30px;
-		}
-
-	.jumbotron h1 {
-		text-align: right;
-		color: #f8d89c;
-		padding: 60px 40px 0 0;
-
-
-	}
-
-	.jumbotron h2 {
-		text-align: right;
-		color: #fff7e6;
-		padding: 20px 80px;
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
 }
 
-	.jumbotron h1, h2 {
-		text-shadow: 2px -3px rgba(0,0,0,0.3);
-		opacity: 0.95;
-	}
+html {
+	display: block;
+}
 
-	.footer {
-		margin-top: -20px;
-		size: 60px;
-	}
+body {
 
- .in li {
-	 background-color: transparent
- }
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	width: 100%;
+
+}
+
+/** NAVBAR **/
+
+
+.navbar {
+	position: relative;
+	min-height: 50px;
+	font-size: 0.9em;
+	background-color: rgba(248, 216, 156, 0.3);
+	border-bottom: 1px solid;
+}
+
+ul.menu {
+	padding-left: 0px;
+	padding-right: 2em;
+	display: none;
+}
+
+button {
+	border: 1px solid;
+	height: 3em;
+	width: 3em;
+	margin: 0.9em 3.2em;
+	float: right;
+	border-radius: 5px;
+}
+
+a.logo img {
+	margin: 0.2em 0.5em;
+}
+
+/** MAIN **/
+/**********/
+
+div.main {
+	width: 100%;
+	background: no-repeat url('../img/florida.png');
+	background-size: cover;
+}
+
+.main h1 {
+	margin: 0 2.5em;
+	text-align: right;
+	padding: 1em 0;
+	color: #f8d89c;
+	line-height: 1.3em;
+	font-size: 2em;
+}
+
+.main h2 {
+	margin: 0 0.8em 1em 0.9em;
+	color: #fff7e6;
+	font-size: 1.5em;
+	padding: 1em;
+}
+
+/* footer */
+
+.footer {
+	/*width:100%*/
+}
+
+/**********bootstrap*********/
+/*
+.navbar-default {
+	background-color: rgba(248, 216, 156, 0.3);
+	border: 0;
+	color: #fff7e6;
+}
+
+.navbar-default .navbar-nav li a {
+	color: #fff7e6;
+}
+
+li:hover {
+	background: #fff7e6;
+}
+
+.navbar-brand {
+	opacity: 1;
+}
+
+.navbar-brand img {
+	opacity: 1;
+	filter: invert(100%);
+	margin-top: -10px;
+}
+
+.navbar-brand img:hover {
+	filter: invert(0%);
+}
+
+.navbar-brand:hover {
+	background: #fff7e6;
+}
+
+.navbar-header .navbar-toggle {
+	border: 0;
+}
+
+.navbar-toggle:hover {
+	background: #fff7e6;
+}
+
+.navbar-header .icon-bar {
+	border: 1px solid #fff7e6;
+}
+
+.navbar-header .icon-bar:hover {
+	border: 1px solid #;
+}
+
+.jumbotron {
+	background: url("http://eoimages.gsfc.nasa.gov/images/imagerecords/84000/84737/iss041e074232_lrg.jpg") center center no-repeat;
+	background-size: cover;
+	height: 670px;
+	margin-top: -70px;
+}
+
+.jumbotron .row {
+	text-align: center;
+	padding: 30px;
+}
+
+.jumbotron h1 {
+	text-align: right;
+	color: #f8d89c;
+	padding: 60px 40px 0 0;
+}
+
+.jumbotron h2 {
+	text-align: right;
+	color: #fff7e6;
+	padding: 20px 80px;
+}
+
+.jumbotron h1, h2 {
+	text-shadow: 2px -3px rgba(0,0,0,0.3);
+	opacity: 0.95;
+}
+
+.footer {
+	margin-top: -20px;
+	size: 60px;
+}
+
+.in li {
+	background-color: transparent
+}*/
