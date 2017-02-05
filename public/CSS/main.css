@@ -6,6 +6,7 @@
 
 html {
 	display: flex;
+	background-color: #081828;
 }
 
 body {
@@ -23,6 +24,7 @@ header {
 	font-size: 0.9em;
 	background-color: rgba(248, 216, 156, 0.3);
 	display: flex;
+	    border-bottom: 2px solid #4c4943;
 }
 
 nav {
@@ -37,12 +39,12 @@ ul.menu {
 }
 
 button {
-    border: 1px solid;
-    height: 3em;
-    width: 3em;
-    border-radius: 5px;
-    margin: 0.5em 1.2em;
-    float: right;
+  border: 1px solid;
+  height: 3em;
+  width: 3em;
+  border-radius: 5px;
+  margin: 0.5em 1.2em;
+  float: right;
 }
 
 a.logo img {
