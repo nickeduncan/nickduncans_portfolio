@@ -49,12 +49,25 @@ ul.menu li a {
 }
 
 button {
-  border: 1px solid;
+  border: 0;
   height: 3em;
   width: 3em;
   border-radius: 5px;
-  margin: 0.5em 1.2em;
+  margin: 0.6em 1.3em;
   float: right;
+	background-color: #081828;
+}
+
+span.icon-bar {
+	border: 1px solid white;
+	width: 1px;
+	height: 1px;
+}
+
+a.topnav-localicons {
+    font-size: 20px !important;
+    padding-top: 6px !important;
+    padding-bottom: 12px !important;
 }
 
 a.logo img {
@@ -149,11 +162,9 @@ li:hover {
 .navbar-toggle:hover {
 	background: #fff7e6;
 }
+*/
 
-.navbar-header .icon-bar {
-	border: 1px solid #fff7e6;
-}
-
+/*
 .navbar-header .icon-bar:hover {
 	border: 1px solid #;
 }
