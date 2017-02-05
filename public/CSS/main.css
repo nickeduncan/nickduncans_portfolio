@@ -33,6 +33,7 @@ ul.menu {
 	padding: 0px;
 	margin: 0;
 	display: none;
+	height: 4em;
 }
 
 button {
@@ -68,6 +69,7 @@ div.main {
 	color: #f8d89c;
 	line-height: 1.3em;
 	font-size: 3em;
+	text-shadow: #fff7e6 1px 1px 10px;
 }
 
 .main h2 {
@@ -76,6 +78,7 @@ div.main {
 	font-size: 1.5em;
 	width: 74%;
 	max-width: 400px;
+	text-shadow: #fff7e6 1px 1px 10px;
 }
 
 /* footer */
