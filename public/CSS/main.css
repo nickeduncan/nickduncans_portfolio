@@ -17,8 +17,9 @@ body {
 
 }
 
+/* -------- */
 /** NAVBAR **/
-
+/* ------- */
 
 header {
 	font-size: 0.9em;
@@ -28,7 +29,8 @@ header {
 
 nav {
 	width: 100%;
-	box-shadow: 0 1px 10px 1px #fff7e6;
+	/*box-shadow: 0 1px 10px 1px #fff7e6;*/
+	border-bottom: 1px solid white;
 }
 
 ul.menu {
@@ -95,7 +97,7 @@ div.main {
 	color: #f8d89c;
 	line-height: 1.3em;
 	font-size: 3em;
-	text-shadow: #fff7e6 1px 1px 10px;
+	text-shadow: #000 1px 1px 10px;
 }
 
 .main h2 {
@@ -104,7 +106,7 @@ div.main {
 	font-size: 1.5em;
 	width: 74%;
 	max-width: 400px;
-	text-shadow: #fff7e6 1px 1px 10px;
+	text-shadow: #000 1px 1px 10px;
 }
 
 /* footer */
