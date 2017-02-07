@@ -122,6 +122,17 @@ margin-bottom: 0px;
 color: #fff;
 }
 
+/* ------- */
+/* QUERIES */
+/* ------- */
+
+/*@media (min-width: 700px) {
+	ul.menu {display: block;}
+}*/
+
+
+
+
 
 /**********bootstrap*********/
 /*
