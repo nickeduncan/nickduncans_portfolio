@@ -50,6 +50,10 @@ ul.menu li a {
 	font-size: 1.5em;
 }
 
+ul.menu li a:hover {
+    text-shadow: #f8d89c 0 0 8px;
+}
+
 button {
   border: 0;
   height: 3em;
@@ -77,6 +81,10 @@ a.logo img {
 	height: 4em;
 	width: 4em;
 	filter: invert(1);
+}
+
+a.logo img:hover {
+    text-shadow: #f8d89c 0 0 8px;
 }
 
 /* ------ */
@@ -109,7 +117,22 @@ div.main {
 	text-shadow: #000 1px 1px 10px;
 }
 
-/* footer */
+.dot {
+  box-shadow: #f8d89c 0 0 5px 5px;
+  width: 0.5em;
+  height: 0.5em;
+  position: relative;
+  top: -1.1em;
+  left: 69.2em;
+  /*background-color: #000;*/
+  border-radius: 10px;
+	transition-property: height, width;
+	transition-duration: 10s;
+
+}
+/* ------ */
+/* FOOTER */
+/* ------ */
 
 .footer {
 	/*width:100%*/
@@ -121,101 +144,3 @@ div.main {
 margin-bottom: 0px;
 color: #fff;
 }
-
-/* ------- */
-/* QUERIES */
-/* ------- */
-
-/*@media (min-width: 700px) {
-	ul.menu {display: block;}
-}*/
-
-
-
-
-
-/**********bootstrap*********/
-/*
-.navbar-default {
-	background-color: rgba(248, 216, 156, 0.3);
-	border: 0;
-	color: #fff7e6;
-}
-
-.navbar-default .navbar-nav li a {
-	color: #fff7e6;
-}
-
-li:hover {
-	background: #fff7e6;
-}
-
-.navbar-brand {
-	opacity: 1;
-}
-
-.navbar-brand img {
-	opacity: 1;
-	filter: invert(100%);
-	margin-top: -10px;
-}
-
-.navbar-brand img:hover {
-	filter: invert(0%);
-}
-
-.navbar-brand:hover {
-	background: #fff7e6;
-}
-
-.navbar-header .navbar-toggle {
-	border: 0;
-}
-
-.navbar-toggle:hover {
-	background: #fff7e6;
-}
-*/
-
-/*
-.navbar-header .icon-bar:hover {
-	border: 1px solid #;
-}
-
-.jumbotron {
-	background: url("http://eoimages.gsfc.nasa.gov/images/imagerecords/84000/84737/iss041e074232_lrg.jpg") center center no-repeat;
-	background-size: cover;
-	height: 670px;
-	margin-top: -70px;
-}
-
-.jumbotron .row {
-	text-align: center;
-	padding: 30px;
-}
-
-.jumbotron h1 {
-	text-align: right;
-	color: #f8d89c;
-	padding: 60px 40px 0 0;
-}
-
-.jumbotron h2 {
-	text-align: right;
-	color: #fff7e6;
-	padding: 20px 80px;
-}
-
-.jumbotron h1, h2 {
-	text-shadow: 2px -3px rgba(0,0,0,0.3);
-	opacity: 0.95;
-}
-
-.footer {
-	margin-top: -20px;
-	size: 60px;
-}
-
-.in li {
-	background-color: transparent
-}*/
