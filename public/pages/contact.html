@@ -11,33 +11,114 @@
   <script type="text/javascript" src="../js/script.js"> </script>
 </head>
 <body>
-	<header>
-    <nav>
-  		<a class="logo" href="../index.html">
-  			<img src="https://nahdadesigns.files.wordpress.com/2012/08/transperant-nd-hd-logo.png">
-  		</a>
-      <button class="menu_toggle">
-        <img src="https://openclipart.org/image/2400px/svg_to_png/221605/menu-icon.png" height="25px" width="40px" style="filter:invert(1)">
-      </button>
-  		<ul class="menu">
-  			<li><a href="pages/gallery.html">Gallery</a></li>
-  			<li><a href="pages/about.html">About</a></li>
-  			<li><a href="#">Contact</a></li>
-  		</ul>
-  	</nav>
-  </header>
-	<div class="main">
-    <h1>About Me</h1>
-		<h2>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-      porttitor dui ante, ac pharetra velit ullamcorper sed. Morbi sem dolor,
-      aliquam eu metus vel, faucibus posuere neque. Donec hendrerit felis id
-      lorem tristique hendrerit. In posuere leo a purus facilisis elementum.
-      Donec commodo aliquam metus, sed posuere lorem accumsan ac.
-    </h2>
-	</div>
-	<div class="footer">
-		<p>&copy;NickDuncan</p>
-	</div>
+  <canvas id="myCanvas" width="480" height="320"></canvas>
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      // canvas
+      var canvas = document.getElementById('myCanvas');
+      var ctx = canvas.getContext("2d");
+      // ball
+      var x = canvas.width/2
+      var y = canvas.height-30;
+      var dx = 2;
+      var dy = -2;
+      var ballRadius = 10;
+      var color = '#0095dd';
+      // paddle
+      var paddleHeight = 10;
+      var paddleWidth = 75;
+      var paddleX = (canvas.width-paddleWidth)/2
+      // paddle keyboard
+      var rightPressed = false;
+      var leftPressed = false;
+
+
+      function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++ ) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      function drawBall() {
+        // drawing code
+        ctx.beginPath();
+        ctx.arc(x,y,ballRadius,0,Math.PI*2);
+        ctx.fillStyle = color;
+        ctx.fill();
+        ctx.closePath();
+      }
+
+      function drawPaddle() {
+        ctx.beginPath();
+        ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
+        ctx.fillStyle = '#0095dd'
+        ctx.fill();
+        ctx.closePath();
+      }
+
+      function draw() {
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        drawBall();
+        drawPaddle();
+
+        if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+          dx = -dx;
+          color = getRandomColor();
+        }
+
+        if(y + dy < ballRadius) {
+          dy = -dy;
+          color = getRandomColor();
+        } else if (y + dy > canvas.height-ballRadius) {
+          if (x > paddleX && x < paddleX + paddleWidth) {
+            dy = -dy;
+            dy -= 0.25;
+            dx -= 0.25;
+          } else {
+            alert("GAME OVER");
+            document.location.reload();
+          }
+        }
+
+        if(rightPressed && paddleX < canvas.width-paddleWidth) {
+          paddleX += 7;
+        }
+        else if(leftPressed && paddleX > 0) {
+          paddleX -= 7;
+        }
+
+        x += dx;
+        y += dy;
+      }
+
+      document.addEventListener("keydown", keyDownHandler, false);
+      document.addEventListener("keyup", keyUpHandler, false);
+      function keyDownHandler(e) {
+        if (e.keyCode == 39) {
+          rightPressed = true;
+        }
+        else if (e.keyCode == 37) {
+          leftPressed = true;
+        }
+      }
+
+      function keyUpHandler(e) {
+        if (e.keyCode == 39) {
+          rightPressed = false;
+        }
+        else if (e.keyCode == 37) {
+          leftPressed = false;
+        }
+      }
+
+      setInterval(draw, 10);
+    </script>
 </body>
 </html>

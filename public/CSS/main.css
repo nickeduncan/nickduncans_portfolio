@@ -96,6 +96,7 @@ div.main {
 	background: no-repeat center center url('../img/florida.png');
 	background-size: cover;
 	height: 34.8em;
+	position: relative;
 }
 
 .main h1 {
@@ -117,19 +118,19 @@ div.main {
 	text-shadow: #000 1px 1px 10px;
 }
 
-.dot {
+/*.dot {
   box-shadow: #f8d89c 0 0 5px 5px;
   width: 0.5em;
   height: 0.5em;
   position: relative;
   top: -1.1em;
   left: 69.2em;
-  /*background-color: #000;*/
+  background-color: #000;
   border-radius: 10px;
 	transition-property: height, width;
 	transition-duration: 10s;
+}*/
 
-}
 /* ------ */
 /* FOOTER */
 /* ------ */
@@ -143,4 +144,31 @@ div.main {
 	margin-top: 0px;
 margin-bottom: 0px;
 color: #fff;
+}
+
+/* ---- */
+/* GAME */
+/* ---- */
+
+canvas {
+  background: transparent;
+  display: block;
+  margin: 0 auto;
+	z-index: 1000;
+	position: absolute;
+}
+
+@media (min-width: 426px) {
+	ul.menu {
+		display: inline-flex;
+		height: 0em;
+		float: right;
+	}
+	ul.menu li {
+	margin: 1.2em 1.3em 0 0;
+	}
+	button.menu_toggle {
+		display: none;
+		top: -640;
+	}
 }
