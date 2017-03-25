@@ -70,21 +70,17 @@ span.icon-bar {
 	height: 1px;
 }
 
-a.topnav-localicons {
+.topnav-localicons {
     font-size: 20px !important;
     padding-top: 6px !important;
     padding-bottom: 12px !important;
 }
 
-a.logo img {
-	margin: 0em 0.5em;
-	height: 4em;
-	width: 4em;
-	filter: invert(1);
-}
-
-a.logo img:hover {
-    text-shadow: #f8d89c 0 0 8px;
+.logo {
+			margin: 0em 0.5em;
+			height: 4em;
+			width: 4em;
+			filter: invert(1);
 }
 
 /* ------ */
