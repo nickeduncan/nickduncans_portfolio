@@ -91,33 +91,33 @@ a.logo img:hover {
 /** MAIN **/
 /* ------ */
 
-div.main {
+.main {
 	width: 100%;
 	background: no-repeat center center url('../img/florida.png');
 	background-size: cover;
 	height: 34.8em;
 	position: relative;
-}
 
-.main h1 {
-	margin: 0 1em 0 0;
-	text-align: right;
-	padding: 1.7em 0 0 0;
-	color: #f8d89c;
-	line-height: 1.3em;
-	font-size: 3em;
-	text-shadow: #000 1px 1px 10px;
-}
+		h1 {
+		margin: 0 1em 0 0;
+		text-align: right;
+		padding: 1.7em 0 0 0;
+		color: #f8d89c;
+		line-height: 1.3em;
+		font-size: 3em;
+		text-shadow: #000 1px 1px 10px;
+	}
 
-.main h2 {
-	margin: 10.5em 0 0 0.7em;
-	color: #fff7e6;
-	font-size: 1.5em;
-	width: 74%;
-	max-width: 400px;
-	text-shadow: #000 1px 1px 10px;
-}
+	h2 {
+		margin: 10.5em 0 0 0.7em;
+		color: #fff7e6;
+		font-size: 1.5em;
+		width: 74%;
+		max-width: 400px;
+		text-shadow: #000 1px 1px 10px;
+	}
 
+}
 /*.dot {
   box-shadow: #f8d89c 0 0 5px 5px;
   width: 0.5em;

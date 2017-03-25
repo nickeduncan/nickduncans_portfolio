@@ -3,95 +3,97 @@
 <head>
   <title>Nicholas Duncan's Portfolio</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="../js/script.js"> </script>
+  <style>
+  @media (min-width: 426px) {
+    ul.menu {
+      display: inline-flex;
+      height: 0em;
+      float: right;
+    }
+    ul.menu li {
+    margin: 1.2em 1.3em 0 0;
+    }
+    button.menu_toggle {
+      display: none;
+    }
+  }
+  </style>
 </head>
 <body>
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="../index.html">
-					<img src="https://nahdadesigns.files.wordpress.com/2012/08/transperant-nd-hd-logo.png" height="45px" width="45px">
-				</a>
-			</div>
-			<div class="collapse navbar-collapse navbar-right" id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li><a href="#">Gallery</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<div class="jumbotron">
-		<div class="row">
-			<div class="col-md-4">
+  <header>
+    <nav>
+  		<a class="logo" href="../index.html">
+  			<img src="https://nahdadesigns.files.wordpress.com/2012/08/transperant-nd-hd-logo.png">
+  		</a>
+      <button class="menu_toggle">
+        <img src="https://openclipart.org/image/2400px/svg_to_png/221605/menu-icon.png" height="25px" width="40px" style="filter:invert(1)">
+      </button>
+  		<ul class="menu">
+  			<li><a href="gallery.html">Gallery</a></li>
+  			<li><a href="#">About</a></li>
+  			<li><a href="contact.html">Contact</a></li>
+  		</ul>
+  	</nav>
+  </header>
+  <div class="main gallery">
+
 				<a href="https://moveinwyncode.herokuapp.com">
 					<img src="../img/movein.png" width="350px" height="150">
 				</a>
-			</div>
-			<div class="col-md-4">
+
 				<a href="https://receivables-insight.herokuapp.com">
 					<img src="../img/receivablesinsight.png" width="350px" height="150">
 				</a>
-			</div>
-			<div class="col-md-4">
+
+
 				<a href="#">
 					<img src="http://placehold.it/350x150">
 				</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
+
+
+
+
 				<a href="#">
 					<img src="http://placehold.it/350x150">
 				</a>
-			</div>
-			<div class="col-md-4">
+
+
 				<a href="#">
 					<img src="http://placehold.it/350x150">
 				</a>
-			</div>
-			<div class="col-md-4">
+
+
 				<a href="#">
 					<img src="http://placehold.it/350x150">
 				</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
+
+
+
+
 				<a href="#">
 					<img src="http://placehold.it/350x150">
 				</a>
-			</div>
-			<div class="col-md-4">
+
+
 				<a href="#">
 					<img src="http://placehold.it/350x150">
 				</a>
-			</div>
-			<div class="col-md-4">
+
+
 				<a href="#">
 					<img src="http://placehold.it/350x150">
 				</a>
-			</div>
-		</div>
+
+
 	</div>
-	<div class="container">
-		<div class="footer">
-			<div class="row">
-				<div class="col-md-2">
-					<p>&copy;NickDuncan</p>
-				</div>
-			</div>
-		</div>
+	<div class="footer">
+		<p>&copy;NickDuncan</p>
 	</div>
 </body>
 </html>

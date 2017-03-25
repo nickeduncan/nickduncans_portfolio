@@ -29,21 +29,23 @@ nav {
 	box-shadow: 0 1px 10px 1px #fff7e6;
 }
 
-ul.menu {
+ul {
+	.menu {
 	padding: 0px;
 	margin: 0;
 	display: none;
 	height: 8.5em;
 	text-align: right;
-}
 
-ul.menu li {
-	margin: 1.1em 1.3em 0 0;
-}
+		li {
+			margin: 1.1em 1.3em 0 0;
+		}
 
-ul.menu li a {
-	color: #fff;
-	font-size: 1.5em;
+		a {
+			color: #fff;
+			font-size: 1.5em;
+		}
+	}
 }
 
 button {
@@ -62,50 +64,58 @@ span.icon-bar {
 	height: 1px;
 }
 
-a.topnav-localicons {
-    font-size: 20px !important;
-    padding-top: 6px !important;
-    padding-bottom: 12px !important;
-}
+a{
 
-a.logo img {
-	margin: 0em 0.5em;
-	height: 4em;
-	width: 4em;
-	filter: invert(1);
+	.topnav-localicons {
+	    font-size: 20px !important;
+	    padding-top: 6px !important;
+	    padding-bottom: 12px !important;
+	}
+
+	.logo {
+		img {
+			margin: 0em 0.5em;
+			height: 4em;
+			width: 4em;
+			filter: invert(1);
+		}
+	}
 }
 
 /* ------ */
 /** MAIN **/
 /* ------ */
 
-div.main {
-	width: 100%;
+.main {
+	width: 80%;
 	/* background: no-repeat center center url('../img/florida.png'); */
 	background-size: cover;
 	height: 34.8em;
-}
 
-.main h1 {
-	margin: 0 1em 0 0;
-	text-align: right;
-	padding: 0.7em 0 0 0;
-	color: #f8d89c;
-	line-height: 1.3em;
-	font-size: 3em;
-	/* text-shadow: #fff7e6 1px 1px 10px; */
-}
+	h1 {
+		margin: 0 1em 0 0;
+		text-align: right;
+		padding: 0.7em 0 0 0;
+		color: #f8d89c;
+		line-height: 1.3em;
+		font-size: 3em;
+		/* text-shadow: #fff7e6 1px 1px 10px; */
+	}
 
-.main h2 {
-	margin: 1.1em 0 0 0.7em;
-	color: #fff7e6;
-	font-size: 1.5em;
-	font-weight: 300;
-	width: 74%;
-	max-width: 400px;
-	/* text-shadow: #fff7e6 1px 1px 10px; */
-}
+	h2 {
+		margin: 1.1em 0 0 0.7em;
+		color: #fff7e6;
+		font-size: 1.5em;
+		font-weight: 300;
+		width: 74%;
+		max-width: 400px;
+		/* text-shadow: #fff7e6 1px 1px 10px; */
+	}
 
+}
+.main.gallery {
+	text-align: center;
+}
 /* footer */
 
 .footer {
