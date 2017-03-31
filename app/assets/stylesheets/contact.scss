@@ -7,9 +7,9 @@
       border-radius: 7px;
       border: none;
       box-shadow: 2px 2px 1px black;
-      margin-top: 1em;
-      width: 8em;
-      height: 3em;
+      margin-top: 2em;
+      width: 16em;
+      height: 6em;
     }
 
     &.github {
@@ -17,7 +17,15 @@
       img {
         filter: invert(1);
         background-color: #eee;
-        border-shadow: white;
+        box-shadow: 2px 2px 1px white;
+      }
+    }
+
+    &.linkedin {
+
+      img {
+        background-color: #fff;
+        padding: 1em;
       }
     }
 
