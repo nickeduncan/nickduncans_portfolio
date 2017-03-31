@@ -1,0 +1,26 @@
+.contact {
+  text-align: center;
+  padding-top: 2em;
+
+  a {
+    img {
+      border-radius: 7px;
+      border: none;
+      box-shadow: 2px 2px 1px black;
+      margin-top: 1em;
+      width: 8em;
+      height: 3em;
+    }
+
+    &.github {
+
+      img {
+        filter: invert(1);
+        background-color: #eee;
+        border-shadow: white;
+      }
+    }
+
+
+  }
+}

@@ -17,9 +17,17 @@
 </head>
 <body>
   <div class="main">
-    <%= link_to "Github", "https://github.com/nickeduncan", class: "contact" %>
-    <%= link_to "LinkedIn", "https://linkedin.com/in/nickeduncan", class: "contact" %>
-    <%= link_to "Facebook", "https://www.facebook.com/nick.duncan.106902", class: "contact" %>
+    <ul class="contact">
+      <li>
+        <%= link_to (image_tag "github.png"), "https://github.com/nickeduncan", class: "github" %>
+      </li>
+      <li>
+        <%= link_to (image_tag "github.png"), "https://linkedin.com/in/nickeduncan", class: "linkedin" %>
+      </li>
+      <li>
+        <%= link_to (image_tag "github.png"), "https://www.facebook.com/nick.duncan.106902", class: "facebook" %>
+      </li>
+    </div>
   </div>
   <div class="footer">
     <p>&copy;NickDuncan</p>
