@@ -92,7 +92,7 @@ span.icon-bar {
 
 	&.about {
 		h1 {
-	    margin: 0 1em 0 0;
+	    margin: 0 1.5em 0 0;
 	    text-align: right;
 	    padding: 0.7em 0 0 0;
 	    color: #f8d89c;
@@ -103,14 +103,18 @@ span.icon-bar {
 
 		h2 {
 			    float: right;
-			    margin: 0.5em 4em;
+			    margin: 0.5em 4.5em;
 			    color: #fff7e6;
 			    font-size: 1.5em;
 			    width: 74%;
-			    max-width: 470px;
+			    max-width: 480px;
 			    text-shadow: #000 1px 1px 10px;
 			    text-align: right;
 					font-weight: normal;
+
+					a, a:visited {
+						color: wheat;
+					}
 		}
 	}
 }
