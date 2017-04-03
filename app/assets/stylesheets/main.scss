@@ -31,6 +31,10 @@ nav {
 	width: 100%;
 	/*box-shadow: 0 1px 10px 1px #fff7e6;*/
 	border-bottom: 1px solid white;
+
+	button.menu_toggle {
+		top: -640;
+	}
 }
 
 ul.menu {
@@ -39,19 +43,19 @@ ul.menu {
 	display: none;
 	height: 8.5em;
 	text-align: right;
-}
 
-ul.menu li {
-	margin: 1.1em 1.3em 0 0;
-}
+	li {
+		margin: 1.1em 1.3em 0 0;
 
-ul.menu li a {
-	color: #fff;
-	font-size: 1.5em;
-}
+		a {
+			color: #fff;
+			font-size: 1.5em;
 
-ul.menu li a:hover {
-    text-shadow: #f8d89c 0 0 8px;
+			&:hover {
+			  text-shadow: #f8d89c 0 0 8px;
+			}
+		}
+	}
 }
 
 button {
@@ -91,8 +95,9 @@ span.icon-bar {
 	width: 100%;
 	background: image-url('florida.png') no-repeat center center;
 	background-size: cover;
-	height: 42em;
-	position: relative;
+	height: 51em;
+	margin-top: -4em;
+
 
 		h1 {
 		margin: 0 1em 0 0;
@@ -155,17 +160,6 @@ canvas {
 	position: absolute;
 }
 
-@media (min-width: 426px) {
-	ul.menu {
-		display: inline-flex;
-		height: 0em;
-		float: right;
-	}
 	ul.menu li {
 	margin: 1.2em 1.3em 0 0;
 	}
-	button.menu_toggle {
-		display: none;
-		top: -640;
-	}
-}
