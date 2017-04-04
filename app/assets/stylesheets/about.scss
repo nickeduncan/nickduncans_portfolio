@@ -1,70 +1,3 @@
-* {
-	box-sizing: border-box;
-	text-decoration: none;
-	list-style: none;
-}
-
-html {
-	display: flex;
-	background-color: #081828;
-}
-
-body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	margin: 0;
-	width: 100%;
-}
-
-/** NAVBAR **/
-
-
-header {
-	font-size: 0.9em;
-	/*background-color: rgba(248, 216, 156, 0.3);*/
-	display: flex;
-}
-
-nav {
-	width: 100%;
-	box-shadow: 0 1px 10px 1px #fff7e6;
-}
-
-button {
-  border: 0;
-  height: 3em;
-  width: 3em;
-  border-radius: 5px;
-  margin: 0.6em 1.3em;
-  float: right;
-	background-color: #081828;
-}
-
-span.icon-bar {
-	border: 1px solid white;
-	width: 1px;
-	height: 1px;
-}
-
-
-.topnav-localicons {
-    font-size: 20px !important;
-    padding-top: 6px !important;
-    padding-bottom: 12px !important;
-}
-
-.logo {
-		img {
-			margin: 0em 0.5em;
-			height: 4em;
-			width: 4em;
-			filter: invert(1);
-	}
-}
-
-/* ------ */
-/** MAIN **/
-/* ------ */
-
 .main {
 	width: 100%;
 	/* background: no-repeat center center url('../img/florida.png'); */
@@ -83,15 +16,16 @@ span.icon-bar {
 		}
 
 		h2 {
-			    float: right;
-			    margin: 0.5em 4.5em;
-			    color: #fff7e6;
-			    font-size: 1.5em;
-			    width: 74%;
-			    max-width: 480px;
-			    text-shadow: #000 1px 1px 10px;
-			    text-align: right;
-					font-weight: normal;
+    float: right;
+		padding-top: 1.7em;
+		// remove left padding to reduce height
+    padding-left: 2.3em;
+    color: #fff7e6;
+    font-size: 2.8em;
+    max-width: 20em;
+    text-shadow: #000 1px 1px 10px;
+    text-align: right;
+    font-weight: normal;
 
 					a, a:visited {
 						color: wheat;
@@ -103,102 +37,3 @@ span.icon-bar {
 .main.gallery {
 	text-align: center;
 }
-/* footer */
-
-.footer {
-	/*width:100%*/
-	padding: 1em;
-}
-
-.footer p {
-	margin-top: 0px;
-margin-bottom: 0px;
-color: #fff;
-}
-
-
-/**********bootstrap*********/
-/*
-.navbar-default {
-	background-color: rgba(248, 216, 156, 0.3);
-	border: 0;
-	color: #fff7e6;
-}
-
-.navbar-default .navbar-nav li a {
-	color: #fff7e6;
-}
-
-li:hover {
-	background: #fff7e6;
-}
-
-.navbar-brand {
-	opacity: 1;
-}
-
-.navbar-brand img {
-	opacity: 1;
-	filter: invert(100%);
-	margin-top: -10px;
-}
-
-.navbar-brand img:hover {
-	filter: invert(0%);
-}
-
-.navbar-brand:hover {
-	background: #fff7e6;
-}
-
-.navbar-header .navbar-toggle {
-	border: 0;
-}
-
-.navbar-toggle:hover {
-	background: #fff7e6;
-}
-*/
-
-/*
-.navbar-header .icon-bar:hover {
-	border: 1px solid #;
-}
-
-.jumbotron {
-	background: url("http://eoimages.gsfc.nasa.gov/images/imagerecords/84000/84737/iss041e074232_lrg.jpg") center center no-repeat;
-	background-size: cover;
-	height: 670px;
-	margin-top: -70px;
-}
-
-.jumbotron .row {
-	text-align: center;
-	padding: 30px;
-}
-
-.jumbotron h1 {
-	text-align: right;
-	color: #f8d89c;
-	padding: 60px 40px 0 0;
-}
-
-.jumbotron h2 {
-	text-align: right;
-	color: #fff7e6;
-	padding: 20px 80px;
-}
-
-.jumbotron h1, h2 {
-	text-shadow: 2px -3px rgba(0,0,0,0.3);
-	opacity: 0.95;
-}
-
-.footer {
-	margin-top: -20px;
-	size: 60px;
-}
-
-.in li {
-	background-color: transparent
-}*/
