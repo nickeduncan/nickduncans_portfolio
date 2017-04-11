@@ -1,13 +1,29 @@
 <body>
-	<div class="main">
-		<h1>Nicholas Duncan</h1>
-		<h2>A Full-Stack Web Developer</h2>
-    <span class="glyphicon glyphicon-menu-left menu menu-left"></span>
-    <span class="glyphicon glyphicon-menu-down menu menu-left"></span>
-    <span class="glyphicon glyphicon-menu-right menu menu-left"></span>
+	<div class="fullpage">
 
-	</div>
-	<div class="footer">
-		<p>&copy;NickDuncan</p>
+		<div class="section">
+
+			<div class="slide">
+				<div class="main">
+					<h1>Nicholas Duncan</h1>
+					<h2>A Full-Stack Web Developer</h2>
+			    <span class="glyphicon glyphicon-menu-left"></span>
+			    <span class="glyphicon glyphicon-menu-down"></span>
+			    <span class="glyphicon glyphicon-menu-right"></span>
+				</div>
+			</div>
+
+			<div class="slide">
+				<%= render "about" %>
+			</div>
+
+			<div class="slide">
+				<%= render "gallery" %>
+			</div>
+		</div>
+
+		<div class="section">
+			<%= render "contact" %>
+		</div>
 	</div>
 </body>
