@@ -124,25 +124,25 @@ span.icon-bar {
 		color: white;
 		font-size: 4em;
 
-		&.glyphicon-menu-left:before {
+		&.glyphicon-menu-left {
 	    content: "\e257";
 			position: absolute;
 			left: 0.7em;
-	    top: 4em;
+	    top: 6em;
 		}
 
-		&.glyphicon-menu-down:before {
+		&.glyphicon-menu-down {
     	content: "\e259";
 	    position: absolute;
-	    top: 9em;
+	    top: 11em;
 	    left: 11em;
 		}
 
-		&.glyphicon-menu-right:before {
+		&.glyphicon-menu-right{
 	    content: "\e258";
 	    position: absolute;
 	    left: 21em;
-	    top: 4em;
+	    top: 6em;
 		}
 	}
 }
