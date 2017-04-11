@@ -4,4 +4,5 @@ $(document).on('turbolinks:load', function() {
     $('.menu').slideToggle('400');
   });
 
+	$('.glyphicon-menu-right');
 });
