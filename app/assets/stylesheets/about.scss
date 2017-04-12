@@ -1,41 +1,38 @@
-.main {
-	width: 100%;
-	/* background: no-repeat center center url('../img/florida.png'); */
-	background-size: cover;
-	height: 34.8em;
+.about {
+	display: none;
 
-	&.about {
-		display: none;
-		
-		h1 {
-	    margin: 0 1.5em 0 0;
-	    text-align: right;
-	    padding: 1.7em 0 0 0;
-	    color: #f8d89c;
-	    line-height: 1.3em;
-	    font-size: 4em;
-	    text-shadow: #000 1px 1px 10px;
-		}
-
-		h2 {
-    float: right;
-		padding-top: 1.7em;
-		// remove left padding to reduce height
-    padding-left: 2.3em;
-    color: #fff7e6;
-    font-size: 2.8em;
-    max-width: 20em;
-    text-shadow: #000 1px 1px 10px;
+	h1 {
+    margin: 0 1.5em 0 0;
     text-align: right;
-    font-weight: normal;
+    padding: 1.7em 0 0 0;
+    color: #f8d89c;
+    line-height: 1.3em;
+    font-size: 4em;
+    text-shadow: #000 1px 1px 10px;
+	}
 
-					a, a:visited {
-						color: wheat;
-					}
-		}
+	h2 {
+  float: right;
+	padding-top: 1.7em;
+	// remove left padding to reduce height
+  padding-left: 2.3em;
+  color: #fff7e6;
+  font-size: 2.8em;
+  max-width: 20em;
+  text-shadow: #000 1px 1px 10px;
+  text-align: right;
+  font-weight: normal;
+
+				a, a:visited {
+					color: wheat;
+				}
 	}
 }
 
 .main.gallery {
 	text-align: center;
+}
+
+.active {
+	display: block;
 }
