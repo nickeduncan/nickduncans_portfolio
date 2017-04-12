@@ -5,7 +5,7 @@ $(document).on('turbolinks:load', function() {
   });
 
 	$('.glyphicon-menu-right').on('click', function() {
-		$('.index').removeClass('active');
-		$('.about').addClass('active');
+		$('.index').toggle('slide');
+		$('.about').toggle('slide');
 	});
 });
