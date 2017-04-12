@@ -43,19 +43,16 @@ ul.menu {
 	padding: 0px;
 	margin: 0;
 	display: none;
-	height: 20em;
+	height: 23em;
 	text-align: right;
 
 	li {
 		margin: 1.1em 1.3em 0 0;
+		color: #fff;
+		font-size: 2.5em;
 
-		a {
-			color: #fff;
-			font-size: 2.5em;
-
-			&:hover {
-			  text-shadow: #f8d89c 0 0 8px;
-			}
+		&:hover {
+		  text-shadow: #f8d89c 0 0 8px;
 		}
 	}
 }
