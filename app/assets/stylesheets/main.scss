@@ -100,10 +100,36 @@ span.icon-bar {
 	background-size: cover;
 	height: 58em;
 	margin-top: -4em;
+
+	.glyphicon {
+		color: white;
+		font-size: 4em;
+	}
+
+	.glyphicon-menu-left {
+		content: "\e257";
+		position: absolute;
+		left: 0.7em;
+		top: 6em;
+	}
+
+	.glyphicon-menu-down {
+		content: "\e259";
+		position: absolute;
+		top: 11em;
+		left: 11em;
+	}
+
+	.glyphicon-menu-right{
+		content: "\e258";
+		position: absolute;
+		left: 21em;
+		top: 6em;
+	}
 }
 
 .index {
-	display: block;
+	display: none;
 
 	h1 {
 		margin: 0 2em 0 0;
@@ -123,32 +149,6 @@ span.icon-bar {
 		width: 74%;
 		max-width: 450px;
 		text-shadow: #000 1px 1px 10px;
-	}
-
-	.glyphicon {
-		color: white;
-		font-size: 4em;
-
-		&.glyphicon-menu-left {
-	    content: "\e257";
-			position: absolute;
-			left: 0.7em;
-	    top: 6em;
-		}
-
-		&.glyphicon-menu-down {
-    	content: "\e259";
-	    position: absolute;
-	    top: 11em;
-	    left: 11em;
-		}
-
-		&.glyphicon-menu-right{
-	    content: "\e258";
-	    position: absolute;
-	    left: 21em;
-	    top: 6em;
-		}
 	}
 }
 
