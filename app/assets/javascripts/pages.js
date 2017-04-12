@@ -1,6 +1,8 @@
 $(document).on('turbolinks:load', function() {
 
 	/// Navbar navigation
+	/// TODO add clickhand on hover
+	/// TODO add effects (cube?)
 	$('.logo').on('click', function() {
 		$(document).find('.active').removeClass('active');
 		$('.index').addClass('active');
