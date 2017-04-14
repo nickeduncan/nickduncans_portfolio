@@ -52,4 +52,9 @@ $(document).on('turbolinks:load', function() {
 			$('.index').addClass('active');
 		}
 	});
+
+	/// Gallery card flipping
+	$(".card").on("click", function(){
+		$(this).toggleClass("flipped");
+	});
 });
