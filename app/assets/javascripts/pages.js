@@ -2,7 +2,6 @@ $(document).on('turbolinks:load', function() {
 
 	/// Navbar navigation
 	/// TODO add clickhand on hover
-	/// TODO add effects (cube?)
 	$('.logo').on('click', function() {
 		$(document).find('.active').removeClass('active');
 		$('.index').addClass('active');
@@ -23,6 +22,7 @@ $(document).on('turbolinks:load', function() {
 	});
 
 /// Arrow navigation
+/// TODO add effects (cube?)
 	$('.glyphicon-menu-down, .menu-contact').on('click', function() {
 		$(document).find('.active').removeClass('active');
 		$('.contact').addClass('active');
