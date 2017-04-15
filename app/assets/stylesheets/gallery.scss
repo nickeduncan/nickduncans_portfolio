@@ -28,8 +28,10 @@
         position: absolute;
         backface-visibility: hidden;
 
-        .back {
+        &.back {
           transform: rotateY(180deg);
+          padding-left: 3em;
+          text-align: left;
         }
 
       }
