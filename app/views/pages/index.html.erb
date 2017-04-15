@@ -1,17 +1,29 @@
 <body>
-	<div class="main index active">
-		<%= render "main" %>
-	</div>
+	<section class="container">
+		<div class="cube">
+			<figure class="front">
+				<div class="main index active">
+					<%= render "main" %>
+				</div>
+			</figure>
 
-	<div class="main about">
-		<%= render "about" %>
-	</div>
+			<figure class="right">
+				<div class="main about">
+					<%= render "about" %>
+				</div>
+			</figure>
 
-	<div class="main gallery">
-		<%= render "gallery" %>
-	</div>
+			<figure class="left">
+				<div class="main gallery">
+					<%= render "gallery" %>
+				</div>
+			</figure>
 
-	<ul class="main contact">
-		<%= render "contact" %>
-	</ul>
+			<figure class="bottom">
+				<ul class="main contact">
+					<%= render "contact" %>
+				</ul>
+			</figure>
+		</div>
+	</section>
 </body>
