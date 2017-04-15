@@ -30,8 +30,13 @@
 
         &.back {
           transform: rotateY(180deg);
-          padding-left: 3em;
+          padding: 3em;
           text-align: left;
+
+          p {
+            text-indent: 2em;
+            size: 2em;
+          }
         }
 
       }
