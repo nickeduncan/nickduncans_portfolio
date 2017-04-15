@@ -5,6 +5,9 @@ $(document).on('turbolinks:load', function() {
 	$('.logo').on('click', function() {
 		$(document).find('.active').removeClass('active');
 		$('.index').addClass('active');
+		$('.cube').toggleClass("show-front");
+		$('.cube').removeClass(panel);
+		panel = "show-front"
 	})
 
 	$('.menu_toggle').on('click', function() {
@@ -14,16 +17,25 @@ $(document).on('turbolinks:load', function() {
 	$('.menu-about').on('click', function() {
 		$(document).find('.active').removeClass('active');
 		$('.about').addClass('active');
+		$('.cube').toggleClass("show-right");
+		$('.cube').removeClass(panel);
+		panel = "show-right"
 	});
 
 	$('.menu-gallery').on('click', function() {
 		$(document).find('.active').removeClass('active');
 		$('.gallery').addClass('active');
+		$('.cube').toggleClass("show-left");
+		$('.cube').removeClass(panel);
+		panel = "show-left"
 	});
 
 	$('.menu-contact').on('click', function() {
 		$(document).find('.active').removeClass('active');
 		$('.contact').addClass('active');
+		$('.cube').toggleClass("show-bottom");
+		$('.cube').removeClass(panel);
+		panel = "show-bottom";
 	});
 
 /// Arrow navigation with cube effects
